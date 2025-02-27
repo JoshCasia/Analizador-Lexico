@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        textarea {
+            width: 80%;
+            height: 300px;
+            margin-top: 20px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h2>Analizador Léxico</h2>
+    <input type="file" id="fileInput" accept=".txt">
+    <button id="clearButton">Limpiar</button>
+    <button id="analyzeButton">Analizar</button>
+    <br>
+    <textarea id="textArea" placeholder="El contenido del archivo aparecerá aquí..."></textarea>
+    
+    <h3>Reporte de Tokens</h3>
+    <table id="tokensTable">
+        <thead>
+            <tr>
+                <th>Token</th>
+                <th>Lexema</th>
+                <th>Posición</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
